@@ -1,7 +1,16 @@
-function SingleProduct(){
-    return (
+import React from "react"
+import Products from "./products"
+import { useParams } from "react-router-dom"
 
-        <h1>SingleProduct</h1>
+function SingleProduct(){
+    const { id } = useParams()
+    return (
+        <>
+                <h1>SingleProduct {id}</h1>
+
+                {/* <ProductPreview/> */}
+        </>
+
     )
 
 }
